@@ -1,0 +1,260 @@
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --color-white: #ffffff;
+}
+
+body {
+  background-color: var(--color-white);
+  color: #757575;
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0.03em;
+  font-size: 14px;
+}
+
+/* ШАПКА */
+
+.logo-left {
+  color: var(--accent-color);
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
+
+.logo {
+  color: #000000;
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+}
+
+.link {
+  color: var(--title-text-color);
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
+.site-nav :focus {
+  background-color: var(--color-white);
+  color: var(--accent-color);
+}
+
+.site-nav :hover {
+  color: var(--accent-color);
+}
+
+.site-nav .link.current {
+  color: var(--accent-color);
+}
+
+.auth-nav :focus {
+  background-color: var(--color-white);
+  color: var(--accent-color);
+}
+
+.auth-nav :hover {
+  color: var(--accent-color);
+}
+
+.contact-link {
+  color: var(--primary-text-color);
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
+/* Добавляє заголовкам стиль */
+
+h1,
+h2,
+h3 {
+  color: var(--title-text-color);
+}
+
+button {
+  cursor: pointer;
+}
+
+/* Секція 1 */
+
+.hero {
+  background-color: #2f303a;
+}
+
+.hero-txt {
+  color: var(--color-white);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.hero-button {
+  background-color: var(--accent-color);
+  color: var(--color-white);
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+/* Секція 2 */
+
+.about-us {
+  line-height: 1.14;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.about-us-txt {
+  line-height: 1.7;
+}
+
+/* Секція 3 */
+
+.section-title {
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+}
+
+/* Секція 4 "Team" */
+
+.team {
+  background-color: #f5f4fa;
+}
+
+.workers {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+.profession {
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+/* Підвал */
+
+.footer {
+  background: #2f303a;
+}
+
+.logo-footer {
+  color: var(--color-white);
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+}
+
+.address-sity {
+  font-style: normal;
+  line-height: 1.7;
+  text-decoration: none;
+  color: var(--color-white);
+}
+
+.contacts {
+  font-style: normal;
+  line-height: 1.7;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.contacts-studio :hover,
+:focus {
+  background-color: #2f303a;
+  color: var(--accent-color);
+}
+
+/* Прибирає список з "li" */
+ul {
+  list-style: none;
+}
+
+/* Скриті заголовки */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* PAGE #-2 */
+
+.bgr-of-buttons {
+  background: #f5f4fa;
+  border-radius: 4px;
+}
+.list-of-buttons {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  color: var(--title-text-color);
+}
+
+.bgr-of-buttons :hover {
+  background-color: var(--accent-color);
+  color: var(--color-white);
+}
+
+.buttons :focus {
+  background-color: var(--accent-color);
+  color: var(--color-white);
+}
+
+.buttons .current {
+  background-color: var(--accent-color);
+  color: var(--color-white);
+}
+
+.titles-of-works {
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--title-text-color);
+}
+
+.paragraphs-of-works {
+  font-size: 16px;
+  line-height: 1.9;
+  color: var(--primary-text-color);
+}
+
+/* колір основного тексту color: #757575 */
+
+/* колір заголовків color: #212121 */
+
+/* колір логотипу (ліва сторона) color: #2196F3 (права сторона) color: #000000  в підвалі (права сторона) color: #FFFFFF */
+
+/* колір при наведенні (акцнет) color: #2196F3 */
+
+/* додатковий колір color: #FFFFFF */
