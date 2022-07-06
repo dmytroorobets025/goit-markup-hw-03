@@ -5,15 +5,37 @@
   --color-white: #ffffff;
 }
 
+*,
+*::before,
+*::after {
+  margin: 0;
+  box-sizing: inherit;
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+}
+
 body {
-  background-color: var(--color-white);
-  color: #757575;
+  background: #e5e5e5;
+  color: var(--primary-text-color);
   font-family: Roboto, sans-serif;
+  font-weight: 400;
   letter-spacing: 0.03em;
   font-size: 14px;
 }
 
+.container {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
 /* ШАПКА */
+
+.header-box {
+  max-width: 1600px;
+  height: 80px;
+  left: 0px;
+  top: 0px;
+}
 
 .logo-left {
   color: var(--accent-color);
@@ -24,6 +46,8 @@ body {
 }
 
 .logo {
+  margin-top: 24px;
+
   color: #000000;
   font-family: Raleway, sans-serif;
   font-weight: 700;
@@ -38,6 +62,11 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
+}
+
+.site-nav {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .site-nav :focus {
@@ -60,6 +89,11 @@ body {
 
 .auth-nav :hover {
   color: var(--accent-color);
+}
+
+.auth-nav {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .contact-link {
@@ -85,11 +119,26 @@ button {
 /* Секція 1 */
 
 .hero {
+  text-align: center;
+}
+
+.hero-container {
+  max-width: 1600px;
+  height: 600px;
+  left: 0px;
+  top: 80px;
+
   background-color: #2f303a;
 }
 
 .hero-txt {
+  padding-top: 200px;
+  padding-left: 452px;
+  padding-right: 452px;
+
+  background-color: #2f303a;
   color: var(--color-white);
+  font-family: Roboto, sans-serif;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -99,9 +148,13 @@ button {
 }
 
 .hero-button {
+  margin-top: 30px;
+  margin-left: 700px;
+  padding: 10px 32px;
+
   background-color: var(--accent-color);
   color: var(--color-white);
-  font-family: "Roboto";
+  font-family: inherit;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -111,10 +164,16 @@ button {
   text-align: center;
   letter-spacing: 0.06em;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: 0;
   border-radius: 4px;
 }
 
 /* Секція 2 */
+
+.about-us-list {
+  margin-top: 0;
+  margin-bottom: 0;
+}
 
 .about-us {
   line-height: 1.14;
