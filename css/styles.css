@@ -5,15 +5,6 @@
   --color-white: #ffffff;
 }
 
-*,
-*::before,
-*::after {
-  margin: 0;
-  box-sizing: inherit;
-  -webkit-box-sizing: inherit;
-  -moz-box-sizing: inherit;
-}
-
 body {
   background: #e5e5e5;
   color: var(--primary-text-color);
