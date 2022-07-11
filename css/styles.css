@@ -23,18 +23,37 @@ body {
 }
 
 .body-pozition {
-  max-width: 1600px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
   background: #e5e5e5;
+}
+
+.content-pozitions {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.container-content {
+  max-width: 1200px;
+  margin: 0;
 }
 
 /* ШАПКА */
 
 .page-header {
-  background: var(--color-white);
+  background-color: var(--color-white);
+  border-bottom: 1px solid #ececec;
+}
+
+.head-box {
+  display: flex;
+  align-items: center;
+  height: 80px;
+  padding: 0 15px;
+  justify-content: space-between;
+}
+
+.head-nav {
+  display: flex;
+  align-items: center;
 }
 
 .logo-left {
@@ -46,8 +65,6 @@ body {
 }
 
 .logo {
-  margin-top: 24px;
-
   color: #000000;
   font-family: Raleway, sans-serif;
   font-weight: 700;
@@ -62,6 +79,15 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
+}
+
+.site-nav {
+  margin-left: 93px;
+  display: flex;
+}
+
+.site-nav .nav-item:not(:last-child) {
+  margin-right: 50px;
 }
 
 .site-nav :focus {
@@ -86,9 +112,13 @@ body {
   color: var(--accent-color);
 }
 
+.auth-nav .nav-item + .nav-item {
+  margin-left: 50px;
+}
+
 .auth-nav {
-  margin-top: 0;
-  margin-bottom: 0;
+  display: flex;
+  margin-left: 331px;
 }
 
 .contact-link {
@@ -124,21 +154,19 @@ button {
 }
 
 .hero-txt {
-  margin-top: 0;
-
+  margin: 0;
   padding-top: 200px;
-  padding-left: 452px;
-  padding-right: 452px;
+  padding-left: 250px;
 
   background-color: #2f303a;
   color: var(--color-white);
   font-family: Roboto, sans-serif;
+  max-width: 696px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
-  text-transform: uppercase;
 }
 
 .hero-button {
@@ -179,20 +207,21 @@ button {
 
 .about-us-box {
   display: flex;
-  padding: 0 15px;
   flex-direction: column;
   align-items: center;
 }
 
 .about-us-list {
   display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
 }
 
 .content-box {
   max-width: 270px;
   display: flex;
   flex-direction: column;
-  padding-right: 30px;
 }
 
 .about-us {
