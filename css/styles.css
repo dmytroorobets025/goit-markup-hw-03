@@ -7,15 +7,14 @@
 
   /* decoration */
   --decoration-work-list: #eeeeee;
+  --decoration-buttons-filtr: #f5f4fa;
+  --decoration-buttons-2: #a9a9ad;
 }
 
 *,
 *::before,
 *::after {
   margin: 0;
-  box-sizing: inherit;
-  -webkit-box-sizing: inherit;
-  -moz-box-sizing: inherit;
 }
 
 body {
@@ -26,18 +25,10 @@ body {
   font-size: 14px;
 }
 
-.body-pozition {
-  background: #e5e5e5;
-}
-
-.content-pozitions {
-  max-width: 1600px;
-  margin: 0 auto;
-}
-
-.container-content {
+.container {
   max-width: 1200px;
-  margin: 0;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
 /* ШАПКА */
@@ -45,14 +36,13 @@ body {
 .page-header {
   background-color: var(--color-white);
   border-bottom: 1px solid #ececec;
+
+  padding: 24px 0;
 }
 
 .head-box {
   display: flex;
   align-items: center;
-  height: 80px;
-  padding: 0 15px;
-  justify-content: space-between;
 }
 
 .head-nav {
@@ -122,7 +112,7 @@ body {
 
 .auth-nav {
   display: flex;
-  margin-left: 331px;
+  margin-left: auto;
 }
 
 .contact-link {
@@ -147,20 +137,17 @@ button {
 
 /* Секція 1 */
 
-.hero {
+.section-hero {
   background: var(--primary-section-fon);
 
-  height: 600px;
-  margin-left: auto;
-  margin-right: auto;
-
   text-align: center;
+
+  padding: 200px 0;
 }
 
 .hero-txt {
-  margin: 0;
-  padding-top: 200px;
-  padding-left: 250px;
+  margin-left: auto;
+  margin-right: auto;
 
   background-color: var(--primary-section-fon);
   color: var(--color-white);
@@ -199,20 +186,12 @@ button {
 /* Секція 2 */
 
 .section {
-  padding: 94px 0 0;
+  padding: 94px 0;
   background: var(--color-white);
 }
 
-.container-content {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
-
-.about-us-box {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.about {
+  padding-bottom: 0;
 }
 
 .about-us-list {
@@ -242,17 +221,6 @@ button {
 
 /* Секція 3 */
 
-.section-item {
-  padding-bottom: 94px;
-  background: var(--color-white);
-}
-
-.work-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 .title-images {
   margin-top: 50px;
 
@@ -271,8 +239,6 @@ button {
 }
 
 .section-title {
-  padding-top: 94px;
-
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
@@ -280,14 +246,10 @@ button {
 
 /* Секція 4 "Team" */
 
-.team {
-  background-color: #f5f4fa;
-}
+.section-team {
+  padding: 94px 0;
 
-.team-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  background-color: #f5f4fa;
 }
 
 .team-box {
@@ -296,8 +258,6 @@ button {
   gap: 30px;
 
   margin-top: 50px;
-
-  margin-bottom: 94px;
 }
 
 .team-element {
@@ -328,18 +288,9 @@ button {
 /* Підвал */
 
 .footer {
+  padding: 60px 0;
+
   background: var(--primary-section-fon);
-}
-
-.footer-box {
-  display: flex;
-  height: 252px;
-  padding: 0 15px;
-  align-items: center;
-}
-
-.footer-nav {
-  display: block;
 }
 
 .logo-footer {
@@ -352,15 +303,12 @@ button {
   display: inline-block;
 }
 
-.footer-address {
-  margin-top: 20px;
-  display: block;
+.footer-contact :not(:last-child) {
+  padding-bottom: 9px;
 }
 
-.footer-contact {
-  display: flex;
-  flex-direction: column;
-  row-gap: 9px;
+.footer-address {
+  margin-top: 20px;
 }
 
 .address-item .address-sity {
@@ -410,44 +358,31 @@ ul {
 
 /* PAGE #-2 */
 
-.work-content-box {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.main-container {
-  background-color: var(--color-white);
-}
-
 .section-portfolio {
   padding: 94px 0;
 }
 
 .buttons {
-  margin-bottom: 49px;
+  margin-bottom: 50px;
   display: flex;
   justify-content: center;
   gap: 8px;
 }
 
-.bgr-of-buttons {
-  display: flex;
-
-  background: #f5f4fa;
-  border-radius: 4px;
-}
-
 .list-of-buttons {
   padding: 6px 22px;
+
+  border: none;
+  border-radius: 4px;
 
   font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.6;
-  text-align: center;
-  cursor: pointer;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
   color: var(--title-text-color);
+  cursor: pointer;
 }
 
 .bgr-of-buttons :hover {
