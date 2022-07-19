@@ -152,7 +152,7 @@ button {
   background-color: var(--primary-section-fon);
   color: var(--color-white);
   font-family: Roboto, sans-serif;
-  max-width: 696px;
+  max-width: 600px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
